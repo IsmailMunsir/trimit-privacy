@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrimIt — Privacy Policy</title>
+<style>
+  :root {
+    --primary: #3D5AFE;
+    --text: #1E1E2D;
+    --muted: #5b6070;
+    --bg: #ffffff;
+    --line: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 20px; margin: 36px 0 10px; letter-spacing: -0.2px; }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .callout {
+    background: #EEF1FF;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0 20px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #f7f8fb; font-weight: 600; }
+  a { color: var(--primary); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy for TrimIt</h1>
+  <p class="updated">Last updated: 6 September 2026</p>
+</header>
+
+<p>
+  TrimIt is a personal finance app for tracking wallets, income, expenses and
+  subscriptions. This policy explains what happens to your information when
+  you use it.
+</p>
+
+<div class="callout">
+  <p>
+    <strong>In short:</strong> your financial data stays on your phone. TrimIt
+    has no user accounts of its own, no cloud sync and no analytics. The app
+    only contacts the internet to fetch currency exchange rates, and to sign
+    you in with Google if you choose that option.
+  </p>
+</div>
+
+<h2>1. Information stored on your device</h2>
+
+<p>
+  Everything you enter into TrimIt is written to a database stored locally on
+  your phone. This includes:
+</p>
+
+<ul>
+  <li>Wallets, including names, types, currencies, balances, budgets and spending limits</li>
+  <li>Income and expense transactions, including amounts, categories, dates and notes</li>
+  <li>Transfers between your own wallets</li>
+  <li>Subscriptions, including names, costs, billing cycles and renewal dates</li>
+  <li>Payment history generated when a subscription renews</li>
+  <li>Savings goals and their progress</li>
+  <li>App settings such as your chosen theme, display currency and notification preferences</li>
+</ul>
+
+<p>
+  This information is <strong>not transmitted to us or to any third party</strong>.
+  We do not operate a server that receives it, and we cannot see it.
+</p>
+
+<h2>2. Information that leaves your device</h2>
+
+<h3>Exchange rates</h3>
+<p>
+  To convert between currencies, TrimIt requests current exchange rates from a
+  public rates API. This request contains no personal information and no
+  details about your wallets or spending — it simply asks for current rates.
+  Rates are cached on your device so conversion continues to work offline.
+</p>
+
+<h3>Google Sign-In (optional)</h3>
+<p>
+  TrimIt offers Google Sign-In as one way to create a profile in the app. If
+  you choose to use it, Google shares your name and email address with the app
+  so a profile can be created. This is handled by Firebase Authentication,
+  operated by Google.
+</p>
+<p>
+  Using Google Sign-In is entirely optional. You can create a local account
+  with an email and password instead, or use the app without signing in at
+  all. Passwords for local accounts are stored only as a one-way SHA-256 hash
+  and are never recoverable in plain text.
+</p>
+<p>
+  Google's own handling of this data is covered by the
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+</p>
+
+<h2>3. What we do not do</h2>
+
+<ul>
+  <li>We do not collect or transmit your financial data</li>
+  <li>We do not use analytics or tracking software</li>
+  <li>We do not show advertisements</li>
+  <li>We do not sell or share any information with third parties</li>
+  <li>We do not access your contacts, location, camera, photos or microphone</li>
+</ul>
+
+<h2>4. Permissions the app requests</h2>
+
+<table>
+  <tr><th>Permission</th><th>Why it is needed</th></tr>
+  <tr>
+    <td>Internet</td>
+    <td>To fetch live currency exchange rates, and for Google Sign-In if used</td>
+  </tr>
+  <tr>
+    <td>Notifications</td>
+    <td>To remind you before a subscription renews. Reminders are scheduled locally on your device</td>
+  </tr>
+  <tr>
+    <td>Exact alarms</td>
+    <td>To ensure renewal reminders arrive at the intended time</td>
+  </tr>
+  <tr>
+    <td>Biometrics</td>
+    <td>Only if you enable fingerprint or face unlock for the app's PIN lock</td>
+  </tr>
+  <tr>
+    <td>Boot completed</td>
+    <td>To restore scheduled reminders after your phone restarts</td>
+  </tr>
+</table>
+
+<h2>5. Backups you create</h2>
+
+<p>
+  TrimIt lets you export a backup of your data as a JSON file. This file is
+  written to your device's storage. It is not uploaded anywhere automatically.
+</p>
+<p>
+  If you choose to share that file — by email, cloud storage or any other
+  method — it leaves your device at that point, and its privacy then depends
+  on the service you shared it through. The backup file is not encrypted, so
+  treat it as you would any document containing your financial information.
+</p>
+
+<h2>6. Your control over your data</h2>
+
+<ul>
+  <li><strong>Export:</strong> Settings &rarr; Backup &amp; Restore &rarr; Export backup</li>
+  <li><strong>Delete everything:</strong> Settings &rarr; Backup &amp; Restore &rarr; Clear all data</li>
+  <li><strong>Uninstall:</strong> removing the app deletes its local database and all data within it</li>
+  <li><strong>Google Sign-In:</strong> you can sign out at any time from the Profile screen</li>
+</ul>
+
+<p>
+  Because your data is stored only on your device, deleting it there deletes
+  it completely. There is no copy held elsewhere for us to remove.
+</p>
+
+<h2>7. Children</h2>
+
+<p>
+  TrimIt is not directed at children under 13, and we do not knowingly collect
+  information from them. Since the app does not transmit personal data to us,
+  no such information reaches us in any case.
+</p>
+
+<h2>8. Security</h2>
+
+<p>
+  Network requests made by the app use HTTPS. You can optionally protect the
+  app with a PIN, stored only as a one-way hash, with biometric unlock
+  available on supported devices.
+</p>
+<p>
+  No method of storage or transmission is completely secure. Data held on your
+  device is also subject to your device's own security — keeping your phone
+  locked and up to date matters.
+</p>
+
+<h2>9. Changes to this policy</h2>
+
+<p>
+  If this policy changes, the updated version will be posted at this address
+  with a revised "last updated" date. Significant changes will be noted in the
+  app's release notes.
+</p>
+
+<h2>10. Contact</h2>
+
+<p>
+  Questions about this policy or about how TrimIt handles data can be sent to:
+</p>
+<p>
+  <strong>ismailahamedmunsir@gmail.com</strong>
+</p>
+
+<footer>
+  TrimIt &middot; Privacy Policy &middot; Last updated 6 September 2026
+</footer>
+
+</div>
+</body>
+</html>
